@@ -1,7 +1,7 @@
 import cmath as m
-a = int(input("Enter the coefficient of x^2 "))
-b = int(input("Enter the coefficient x "))
-c = int(input("Enter the constant "))
+a = float(input("Enter the coefficient of x^2 :"))
+b = float(input("Enter the coefficient x :"))
+c = float(input("Enter the constant :"))
 d = ((b**2) - 4*a*c)
 if d > 0:
     print("The roots real and distinct")
