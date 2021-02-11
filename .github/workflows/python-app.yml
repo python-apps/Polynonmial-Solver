@@ -22,7 +22,7 @@ jobs:
             pip install -r requirements.txt
         - name: Building with pyinstaller
           run: |
-            pyinstaller --onefile app.py
+            pyinstaller --onefile Quadratic-Equation-solver.py
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v2.2.2
           with:
@@ -48,7 +48,7 @@ jobs:
             pip install -r requirements.txt
         - name: Building with pyinstaller
           run: |
-            pyinstaller --onefile app.py
+            pyinstaller --onefile Quadratic-Equation-solver.py
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v2.2.2
           with:
@@ -70,7 +70,7 @@ jobs:
             pip install -r requirements.txt
         - name: Building with pyinstaller
           run: |
-            pyinstaller --onefile app.py
+            pyinstaller --onefile Quadratic-Equation-solver.py
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v2.2.2
           with:
