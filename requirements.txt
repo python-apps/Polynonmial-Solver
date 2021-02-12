@@ -1,1 +1,2 @@
 pyinstaller==4.1
+numpy
