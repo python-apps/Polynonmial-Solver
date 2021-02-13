@@ -1,4 +1,3 @@
-import cmath as m
 from numpy.polynomial import Polynomial as P
 def quadpoly():
 	  a = float(input("Enter the coefficient of x^2 :"))
