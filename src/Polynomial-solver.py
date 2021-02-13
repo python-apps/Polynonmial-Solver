@@ -6,4 +6,4 @@ if deg == "quad":
         b = float(input("Enter the coefficient x :"))
         c = float(input("Enter the constant :"))        
         fx = P([c,b,a])
-        print("The Roots of the given equation are,"P.root())
+        print("The Roots of the given equation are,"fx.root())
