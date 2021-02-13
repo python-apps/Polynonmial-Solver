@@ -28,7 +28,7 @@ jobs:
           uses: actions/upload-artifact@v2.2.2
           with:
             name: 'linux-x64' 
-            path: dist
+            path: src/dist
           
     windows:
       name: windows build
@@ -55,7 +55,7 @@ jobs:
           uses: actions/upload-artifact@v2.2.2
           with:
             name: windows-${{matrix.architecture}}
-            path: dist
+            path: src\dist
         
     macos:
       name: macos build
@@ -78,4 +78,4 @@ jobs:
           uses: actions/upload-artifact@v2.2.2
           with:
             name: 'macos-x64' 
-            path: dist 
+            path: src/dist 
