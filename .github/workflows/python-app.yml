@@ -23,7 +23,7 @@ jobs:
         - name: Building with pyinstaller
           run: |
             cd src
-            pyinstaller --onefile Polynomial-solver.py
+            pyinstaller --onefile app.py
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v2.2.2
           with:
@@ -50,7 +50,7 @@ jobs:
         - name: Building with pyinstaller
           run: |
             cd src
-            pyinstaller --onefile Polynomial-solver.py
+            pyinstaller --onefile app.py
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v2.2.2
           with:
@@ -73,7 +73,7 @@ jobs:
         - name: Building with pyinstaller
           run: |
             cd src
-            pyinstaller --onefile Polynomial-solver.py
+            pyinstaller --onefile app.py
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v2.2.2
           with:
