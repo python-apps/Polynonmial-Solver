@@ -2,9 +2,9 @@ name: Python application
 
 on:
   push:
-    branches: [ main ]
+    branches: [ development ]
   pull_request:
-    branches: [ main ]
+    branches: [ development ]
 
 jobs:
     linux:
@@ -22,12 +22,13 @@ jobs:
             pip install -r requirements.txt
         - name: Building with pyinstaller
           run: |
-            pyinstaller --onefile Quadratic-Equation-solver.py
+            cd src
+            pyinstaller --onefile app.py
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v2.2.2
           with:
             name: 'linux-x64' 
-            path: dist
+            path: src/dist
           
     windows:
       name: windows build
@@ -48,12 +49,13 @@ jobs:
             pip install -r requirements.txt
         - name: Building with pyinstaller
           run: |
-            pyinstaller --onefile Quadratic-Equation-solver.py
+            cd src
+            pyinstaller --onefile app.py
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v2.2.2
           with:
             name: windows-${{matrix.architecture}}
-            path: dist
+            path: src\dist
         
     macos:
       name: macos build
@@ -70,9 +72,10 @@ jobs:
             pip install -r requirements.txt
         - name: Building with pyinstaller
           run: |
-            pyinstaller --onefile Quadratic-Equation-solver.py
+            cd src
+            pyinstaller --onefile app.py
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v2.2.2
           with:
             name: 'macos-x64' 
-            path: dist 
+            path: src/dist 

@@ -1,5 +1,5 @@
-# Quadratic-Equation-Solver
-This is a simple Quadratic Equation Solver made Using Python 
+# Polynomial-Solver
+This is a simple **Polynomial Solver** made Using Python 
 
 For any feedback, publish it in [Issues](https://github.com/python-apps/Quadratic-Equation-Solver/issues)
 
