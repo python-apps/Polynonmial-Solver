@@ -1,3 +1,1 @@
-# Polynomial Solver 
-
-this is the website for applicance Polynomial solver
+This is the website for applicance Polynomial solver
