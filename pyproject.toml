@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Polynomial Calculator"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/polynomialcalculator"
+license = "MIT license"
+author = 'Python apps'
+author_email = "pythonapps@yandex.com"
+
+[tool.briefcase.app.polynomialcalculator]
+formal_name = "Polynomial Calculator"
+description = "A calculator for polynomials"
+icon = "src/polynomialcalculator/resources/polynomialcalculator"
+sources = ['src/polynomialcalculator']
+requires = []
+
+
+[tool.briefcase.app.polynomialcalculator.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.polynomialcalculator.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.polynomialcalculator.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.polynomialcalculator.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.polynomialcalculator.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
