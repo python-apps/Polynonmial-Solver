@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.4
+Name: polynomialcalculator
+Formal-Name: Polynomial Calculator
+App-ID: com.example.polynomialcalculator
+Version: 0.0.1
+Home-page: https://example.com/polynomialcalculator
+Author: Python-apps
+Author-email: pythonapps@yandex.com
+Summary: A calculator for polynomials
