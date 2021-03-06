@@ -15,7 +15,7 @@ def cubpoly(a,b,c):
 def quartpoly(a,b,c,d):
     alpha = -b / 4*a
     b2 = b + alpha*a
-    c2 = c + alpha*b1
+    c2 = c + alpha*b2
     d2 = d + alpha*c2
     beta , gamma , zeta = cubpoly(a,b2,c2,d2)
     return alpha , beta , gamma , zeta
@@ -25,14 +25,14 @@ if deg == "quad":
     b = float(input("Enter the coefficient x :"))
     c = float(input("Enter the constant :"))
     alp , be = quadpoly(a,b,c)
-    print("The Roots of the given equation are,"+ alp + " " + be)
+    print("The Roots of the given equation are,"+ str(alp) + " " + str(be))
 elif deg == "cubic":
     a3 = float(input("Enter the coefficient of x^3 :"))
     b3 = float(input("Enter the coefficient x^2 :"))
     c3 = float(input("Enter the coefficient x :"))
     d3 = float(input("Enter the constant :"))
-    alpha , beta , gamma = cubpoly(a3,b3,c3,d3)
-    print("The Roots of the given equation are,"+ alpha + " " + beta + " " + gamma )
+    alpha , beta , gamma = cubpoly(a3,b3,c3)
+    print("The Roots of the given equation are,"+ str(alpha) + " " + str(beta) + " " + str(gamma) )
 elif deg == "quart":
     a4 = float(input("Enter the coefficient of x^4 :"))
     b4 = float(input("Enter the coefficient of x^3 :"))
