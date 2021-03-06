@@ -41,3 +41,4 @@ elif deg == "quart":
     e4 = float(input("Enter the constant :"))
     alpha , beta , gamma , zeta = quartpoly(a4,b4,c4,d4,e4)
     print("The Roots of the given equation are,"+ alpha + " " + beta + " " + gamma + " " + zeta)
+input()
