@@ -75,6 +75,7 @@ jobs:
           run: |
             cd src
             pyinstaller --onefile app.py
+            chmod +x app.py
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v2.2.2
           with:
